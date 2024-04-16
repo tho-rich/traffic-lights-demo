@@ -1,0 +1,30 @@
+.light {
+  margin-left: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #555;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+}
+
+.light.red.active {
+  background-color: #a00;
+}
+
+.light.yellow.active {
+  background-color: #cc0;
+}
+
+.light.green.active {
+  background-color: #0a0;
+}
+
+.light.yellow.blink {
+  animation: blink 1.5s step-start 0s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {background-color: #555;}
+  50% {background-color: #cc0}
+}

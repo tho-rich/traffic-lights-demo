@@ -1,0 +1,59 @@
+.crossroad {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.streetcross {
+    position: absolute;
+    background-color: #fff;
+    width: 5rem;
+    height: 0.5rem;
+}
+
+.streetcross.left {
+    top: calc(40% - 0.5rem);
+    left: calc(50% - 5rem);
+}
+
+.streetcross.right {
+    top: calc(40% + 10rem);
+    left: calc(50%);
+}
+
+.street.horizontal {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    background-image: url( '/public/street-h.svg' );
+    background-position: center center;
+}
+
+.street.vertical {
+    width: 10rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 5rem);
+
+    background-image: url( '/public/street-v.svg' );
+    background-position: center center;
+}
+
+.pedestrian {
+    position: absolute;
+    top: 40%;
+    left: calc(50% + 16rem);
+    width: 12rem;
+    height: 10rem;
+    background: repeating-linear-gradient(
+        0deg,
+        #fff 3%,
+        #fff 13%,
+        #999 13%,
+        #999 23.5%
+    );
+}
